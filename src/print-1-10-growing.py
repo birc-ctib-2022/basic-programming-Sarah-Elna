@@ -1,5 +1,8 @@
 
 # Print the numbers described in the exercise
 
-for i in range(1, 12, 1):
-    print(*range(1, i, 1))
+nr_list = []
+
+for i in range(1, 11, 1):
+    nr_list.append(i)
+    print(*nr_list)
