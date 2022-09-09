@@ -1,13 +1,28 @@
 
 # Print the pattern
 
-a = ["*"]
-b = ["*", "*"]
-c = ["*", "*", "*"]
-d = ["*", "*", "*", "*"]
-e = ["*", "*", "*", "*", "*"]
+# my cluncky solution
+# (which I love, because it is funny):
 
-pattern_list = [a, b, c, d, e, d, c, b, a]
+# a = ["*"]
+# b = ["*", "*"]
+# c = ["*", "*", "*"]
+# d = ["*", "*", "*", "*"]
+# e = ["*", "*", "*", "*", "*"]
 
-for lst in pattern_list:
-    print(*lst)
+# pattern_list = [a, b, c, d, e, d, c, b, a]
+
+# for lst in pattern_list:
+#     print(*lst)
+
+# New code inspired from class code
+
+stars = []
+
+for _ in range(9):
+    if _ <= 4:
+        stars.append('*')
+        print(*stars)
+    elif _ > 4:
+        stars.pop()
+        print(*stars)
