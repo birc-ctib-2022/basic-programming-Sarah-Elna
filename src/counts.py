@@ -11,7 +11,7 @@ count = {}
 for c in x:
     if c not in count:
         count[c] = 1
-    if c in count.keys:
+    if c in count:
         count[c] += 1
 
 # Get the keys, i.e., the characters, in sorted order
