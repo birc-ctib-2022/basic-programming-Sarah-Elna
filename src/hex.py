@@ -24,7 +24,7 @@ match command:
         x.split('0x')
         y = x[1:]
         z = []
-        for c in x:
-            z = chr(int(c, base = 16))
+        for i in y:
+            z = chr(int(i, base = 16))
         decoding = ''.join(z)
         print(decoding)
