@@ -8,7 +8,7 @@ count = {}
 # Count the characters in `x`` and put the counts in `counts`.
 # Your code goes here.
 
-for c in string:
+for c in x:
     if c not in counts.key:
         counts[c] = 1
     if c in counts.keys:
