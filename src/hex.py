@@ -25,6 +25,6 @@ match command:
         y = x[1:]
         z = []
         for i in y:
-            z = chr(int(i, base = 16))
+            z.append(chr(int(i, base = 16)))
         decoding = ''.join(z)
         print(decoding)
