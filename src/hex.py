@@ -22,7 +22,9 @@ match command:
     case "decode":
         # Implement the decoding here
         x.split('0x')
+        y = x[1:]
+        z = []
         for c in x:
-            decode += int(c, base = 16)
-        decode [1:-1] = decoding
+            z = chr(int(c, base = 16))
+        decoding = ''.join(z)
         print(decoding)
