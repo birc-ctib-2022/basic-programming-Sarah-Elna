@@ -16,7 +16,7 @@ match command:
         y = []
         for c in x:
             y.append(str(ord(c)))
-        z = ''.join(y)
+        z = '0x'.join(y)
         encoding = z
         print(encoding)
 
