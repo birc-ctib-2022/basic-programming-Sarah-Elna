@@ -8,6 +8,11 @@ count = {}
 # Count the characters in `x`` and put the counts in `counts`.
 # Your code goes here.
 
+for c in string:
+    if c not in counts.key:
+        counts[c] = 1
+    if c in counts.keys:
+        counts[c] += 1
 
 # Get the keys, i.e., the characters, in sorted order
 # and print the count
