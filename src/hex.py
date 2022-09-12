@@ -21,10 +21,9 @@ match command:
 
     case "decode":
         # Implement the decoding here
-        x.split('0x')
-        y = x[1:]
+        y = x.split('0x')[1:]
         z = []
-        for i in y:
-            z.append(chr(int(i, base = 16)))
+        for c in y:
+            z.append(chr(int(c, base = 16)))
         decoding = ''.join(z)
         print(decoding)
