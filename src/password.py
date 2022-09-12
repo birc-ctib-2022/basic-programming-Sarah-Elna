@@ -15,7 +15,7 @@ is_valid = False
 
 ##At least 1 character from [$#@]; (a in "$#@" will test if a is one of these).
 
-if len(password) > 16 or len(password) <= 6:
+if len(password) < 16 or len(password) >= 6:
     lowercase = False
     uppercase = False
     numbers = False
