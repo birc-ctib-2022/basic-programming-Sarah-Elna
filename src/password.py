@@ -23,7 +23,7 @@ if len(password) > 16 or len(password) <= 6:
     for c in password:
         if c.islower() == True:
             lowercase = True
-        if c.uppercase() == True:
+        if c.isupper() == True:
             uppercase = True
         if c.isnumeric() == True:
             numbers = True
