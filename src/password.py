@@ -20,7 +20,7 @@ if len(password) > 16 or len(password) <= 6:
     uppercase = False
     numbers = False
     special = False
-    for c in passwor:
+    for c in password:
         if c.islower() == True:
             lowercase = True
         if c.uppercase() == True:
