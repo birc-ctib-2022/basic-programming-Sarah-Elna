@@ -9,7 +9,7 @@ count = {}
 # Your code goes here.
 
 for c in x:
-    if c not in count.keys:
+    if c not in count.keys():
         count[c] = 1
     if c in count.keys:
         count[c] += 1
