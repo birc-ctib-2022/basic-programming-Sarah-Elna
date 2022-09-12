@@ -15,7 +15,7 @@ match command:
         # Implement the encoding here
         y = []
         for c in x:
-            y.append(ord(c))
+            y.append(str(ord(c)))
         z = ''.join(y)
         encoding = z
         print(encoding)
